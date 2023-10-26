@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+  <html lang="ja">
+  <head>
+      <meta charset="UTF-8">
+      <title></title>
+      <link rel="stylesheet" href="css/reset.css"><!--ダウンロードしたreset.cssを最初に読み込む-->
+      <link rel="stylesheet" href="css/list.css">
+      <script>
+  function showText(textId) {
+    var textElements = document.querySelectorAll('.text');
+    for (var i = 0; i < textElements.length; i++) {
+      textElements[i].style.display = 'none';
+    }
+
+    var selectedText = document.querySelector('.text[data-num="' + textId + '"]');
+    if (selectedText) {
+      selectedText.style.display = 'block';
+    }
+  }
+</script>
+  </head>
+  <body>
+  <div class="header">
+      <ul>
+      <li><a href="home.html">一覧表</a></li>
+      <li><a href="home.html">編集</a></li>
+          <li><a href="home.html">登録</a></li>
+          <li><a href="home.html">削除</a></li>
+          <li><a href="home.html">出力</a></li>
+          <li><a href="home.html">その他</a></li>
+      </ul>
+  </div>
+  <div class="visual">
+
+      <div class="view">
+
+      </div>
+
+      <div class="content">
+
+      </div>
+  </div>
+  <div class="footer">
+          <li><a href="index.html"> ホーム</a></li>
+  </div>
+  </body>
+  </html>
+
+
+
+</body>
+
+
+</body>
+</html>
